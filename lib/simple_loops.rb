@@ -18,8 +18,12 @@ end
 def return_string_array(array)
   counter = 0
   while array[counter] do
-    array
+    i = array[counter]
+    nel = i.to_s 
+    array[counter] = nel
+    counter = counter + 1
   end
+  array
 end  
   
   
